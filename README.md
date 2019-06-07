@@ -1,27 +1,27 @@
 # A Homebrew repository
 
-`hazelcast-member` is a command line tool that is able to run one or more [Hazelcast IMDG](https://hazelcast.org) member
-instance(s) on the local machine.
+`hazelcast` is a command line tool that is able to control [Hazelcast IMDG](https://hazelcast.org)
+member instances.
 
 ## About
 
-This repository contains the Homebrew formula for `hazelcast-member`.
+This repository contains the Homebrew formula for the `hazelcast` command line tool.
 
-See https://github.com/hazelcast/hazelcast-member-tool for the source code.
+See https://github.com/hazelcast/hazelcast-command-line for the source code.
 
 ## How to install
 
     $ brew tap hazelcast/homebrew-hazelcast
-    $ brew install hazelcast-member
+    $ brew install hazelcast
 
 ### Tab completion support
 
 To enable tab completion on Bash add the following command to your profile:
 
-    if which hazelcast-member > /dev/null; then eval "$(hazelcast-member init -)"; fi
+    if which hazelcast > /dev/null; then eval "$(hazelcast init -)"; fi
 
 ### To clean up everything (may come in handy):
 
-    $ brew uninstall hazelcast-member
+    $ brew uninstall hazelcast
     $ brew untap hazelcast/homebrew-hazelcast
     $ brew cleanup -s
